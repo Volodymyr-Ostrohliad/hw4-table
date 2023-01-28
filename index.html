@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        background: 0;
+        table-layout: fixed;
+        border: 1.7px solid #000;
+      }
+      th,
+      tr,
+      td {
+        width: 200px;
+        height: 40px;
+        border: 2px solid#000;
+        font-size: 1.1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Таблица</h1>
+      <hr />
+    </header>
+    <main>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th bgcolor="blue" colspan="3" style="font-weight: lighter">
+                MY FISRT TABLE
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td bgcolor="blue" align="center">Fisrt cell</td>
+              <td bgcolor="blue" align="center">Secon cell</td>
+              <td bgcolor="yellow" align="center" rowspan="3">
+                6 cells merget togeter
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="yellow" align="center" colspan="2">
+                2 cell merged into one
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="yellow" align="center">
+                1st cell <br />
+                3rd row
+              </td>
+              <td bgcolor="yellow" align="center">2nd cell <br />3rd row</td>
+            </tr>
+            <tr>
+              <td bgcolor="yellow" align="center" colspan="3">
+                Do you like tables?
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <span>© 2023 Эта страница создана для домашнего задания.</span>
+    </footer>
+  </body>
+</html>
